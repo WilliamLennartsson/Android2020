@@ -105,7 +105,7 @@ public class Main {
         boolean isLoopRunning = true;
         // Variabel för lagring av användarinput
         String input = "";
-
+        // Loop som hämtar användarinput tills det att användaren matar in "Exit"
         while(isLoopRunning) {
             // Hämta användarinput
             input = sc.nextLine();
