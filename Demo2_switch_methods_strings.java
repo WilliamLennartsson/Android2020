@@ -80,20 +80,19 @@ public class Main {
         }
 
         // Calling newly created method
-        // getInfoAndGreetPlayer();
-        // getInfoAndGreetPlayer();
-        // getInfoAndGreetPlayer();
+        getInfoAndGreetPlayer();
+        getInfoAndGreetPlayer();
+        getInfoAndGreetPlayer();
 
         // Calling multTable method with different argument
-        // multTable(5); // 5, 10, 15, 20, 25, 30...
-        // multTable(100); // 100, 200, 300, 400, 500...
-        // System.out.println("Write a number");
-        // int number = sc.nextInt();
-        // printMultiplicationTable(number);
-        // System.out.println();
+        printMultiplicationTable(5); // 5, 10, 15, 20, 25, 30...
+        printMultiplicationTable(100); // 100, 200, 300, 400, 500...
+        System.out.println("Write a number");
+        int table = sc.nextInt();
+        printMultiplicationTable(table);
 
         // Calling calculateTax
-        // int tax = calculateTax(40000);
+        int tax = calculateTax(40000);
 
         // fibonacci(100);
 
@@ -129,8 +128,6 @@ public class Main {
             return newNumber;
         }
     }
-
-
 
     // Calculate expected tax
     public static int calculateTax(double amount) {
