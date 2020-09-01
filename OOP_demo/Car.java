@@ -8,12 +8,15 @@ public class Car {
     public String color;
     public Person driver;
 
+    // Constructor. Takes to arguments. A string for brand and a string for model
     public Car(String b, String m) {
+        // Save the passed arguments in the instance variables
         brand = b;
         model = m;
         System.out.println(b + " created. Model: " + m);
     }
 
+    // Method for printing details about the car
     public void printDetails() {
         System.out.println("Brand: " + brand + ". TopSpeed: " + topSpeed + " Model: " + model + ". " +
                 "Color: " + color + ". Caross: " + caross);
