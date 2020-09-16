@@ -14,6 +14,6 @@ public class Game {
     // En metod för att starta en battle mellan en player och ett monster
     public void battle(Player player, Monster monster){}
     // Metod för att generera ett monster
-    public Monster generateRandomMonster(){}
+    public Monster generateRandomMonster(){ return null; }
 
 }
