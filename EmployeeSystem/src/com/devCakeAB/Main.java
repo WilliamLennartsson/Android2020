@@ -27,7 +27,8 @@ public class Main {
 
         // -- EmployeeSystem --
         EmployeeSystem system = new EmployeeSystem();
-        // list of employees
+
+        // -- Test data / Testing methods --
         // add employee. args = (String, int)
         system.addEmployee("Will", 14);
         system.addEmployee("Oleg", 20);
@@ -40,50 +41,64 @@ public class Main {
         system.addSkillToEmployee(1, "IT wizard");
         system.addSkillToEmployee(1, "App dev");
         system.addSkillToEmployee(3, "Database pro");
-
-        // Prints all new employees. no args
+        // Prints all employees. no args
         system.printAllEmployees();
 
+
+        // Menu. Loop forever (or until we exit)
         while(true) {
             // Print menu
             printMenu();
+            // Get user input. Save in choice
             int choice = sc.nextInt();
             sc.nextLine();
+            // Switch the choice
             switch(choice) {
                 case 1:
+                    // User choice == 1. Add new employee
+                    // Ask user to enter the name and age of the new employee
                     System.out.println("Enter name of new employee");
                     String employeeName = sc.nextLine();
                     System.out.println("Enter age of new employee");
                     int employeeAge = sc.nextInt();
+                    // Add the employee with the information from the user
                     system.addEmployee(employeeName, employeeAge);
                     break;
                 case 2:
+                    // User choice == 2. Ask user to enter ID and remove that user.
                     System.out.println("Enter ID of employee you wish to remove");
                     int id = sc.nextInt();
                     system.removeEmployee(id);
                     break;
                 case 3:
+                    // User choice == 3. Ask user to enter ID
                     System.out.println("Enter ID of employee you wish to add a new skill to");
                     int workId = sc.nextInt();
                     sc.nextLine();
+                    // Ask user to enter a new skill.
                     System.out.println("Enter the skill you wish to add");
                     String newSkill = sc.nextLine();
+                    // Add the new skill to the given employee
                     system.addSkillToEmployee(workId, newSkill);
                     break;
                 case 4:
+                    // User choice == 4. Print all employees
                     system.printAllEmployees();
                     break;
                 case 0:
+                    // User choice == 0. Exit
                     System.out.println("Shutting down..");
                     System.exit(0);
                     return;
                 default:
+                    // User choice is none of the above.
                     System.out.println("Wrong input..");
                     break;
             }
         }
     }
 
+    // Method to print menu
     public static void printMenu() {
         System.out.println("-- Menu --");
         System.out.println("1. Add new employee");
