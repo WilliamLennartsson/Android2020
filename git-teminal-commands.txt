@@ -1,0 +1,57 @@
+
+Terminal commands.
+
+ls
+Lists the current directory
+
+cd <foldername> 
+Change directory
+
+cd ..
+Go back a directory
+
+pwd
+Print working directory
+
+mkdir <foldername>
+Make directory
+
+touch <filename>
+creates a new file
+
+
+Git commands
+
+git init
+Creates an empty git 
+
+git add <filename>
+Adds file to stage
+
+git add .
+Adds all files in directory to stage
+
+git reset <filename>
+remove file from stage
+
+git revert <commit-hash>
+undo the last commit
+
+git commit -m "Message goes here"
+Commits the files from the stage
+
+git log
+Prints list of commits
+
+git checkout <commithash>
+git checkout <branch-name>
+Checks out to the state of either a commit or a branch
+
+git push
+Pushes the local commits to GitHub
+
+git pull
+Pulls the latest changes from github
+
+
+
